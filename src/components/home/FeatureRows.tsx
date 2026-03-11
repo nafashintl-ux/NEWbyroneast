@@ -46,10 +46,10 @@ const features = [
     icon: Briefcase,
     title: "Corporate professionals. Not Fiverr freelancers.",
     description:
-      "Byron East brings experience from federal government, corporate policy, and business operations in Beijing. A level of professionalism that a $200 Upwork sourcing agent simply can't match.",
+      "Byron East brings professional experience from working across technology and policy in Beijing, Sydney, Brisbane, and Canberra and a level of professionalism that an $800 Upwork sourcing agent simply can't match.",
     bullets: [
-      "5+ years professional experience inside Chinese organizations",
-      "Registered company in China (WFOE): legal, professional, accountable",
+      "5+ years living and working in Chinese and foreign-owned businesses in China",
+      "Registered company in China (WFOE): legal, professional, accountable [Lean operations team with direct access to China's manufacturing ecosystem]",
       "Deep understanding of e-commerce supply chains",
       "Available weekends. Chinese factories work weekends. So do we.",
     ],

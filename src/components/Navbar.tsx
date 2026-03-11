@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
           {/* <Link
             to="/about"
             className={cn(
@@ -68,13 +68,25 @@ const Navbar = () => {
           >
             Contact
           </Link> */}
+          <a
+            href="https://www.linkedin.com/in/elliottjohnson/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "flex items-center justify-center rounded-full p-2 transition-colors hover:bg-accent/10",
+              scrolled ? "text-foreground/70 hover:text-accent" : "text-background/70 hover:text-accent"
+            )}
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-5 w-5" />
+          </a>
           <Button
             asChild
             size="sm"
             className="rounded-none bg-accent px-6 text-[12px] font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85"
           >
-            <a href="https://cal.com/elliottjohnson01/15-min" target="_blank" rel="noopener noreferrer">
-              Book a Free Consultation
+            <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+              Book a Call
             </a>
           </Button>
         </div>
@@ -95,8 +107,8 @@ const Navbar = () => {
               asChild
               className="mt-2 h-12 rounded-none bg-accent text-[12px] font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85"
             >
-              <a href="https://cal.com/elliottjohnson01/15-min" target="_blank" rel="noopener noreferrer">
-                Book a Free Consultation
+              <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+                Book a Call
               </a>
             </Button>
           </div>

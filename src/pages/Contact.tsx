@@ -55,14 +55,14 @@ const Contact = () => {
                 size="lg"
                 className="mt-6 h-12 w-full rounded-none bg-accent px-8 text-sm font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85 sm:text-[12px]"
               >
-                <a href="https://cal.com/elliottjohnson01/15-min" target="_blank" rel="noopener noreferrer">
-                  Book a Free Consultation <ArrowUpRight className="ml-2 h-3.5 w-3.5" />
+                <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+                  Book a Call <ArrowUpRight className="ml-2 h-3.5 w-3.5" />
                 </a>
               </Button>
 
               <div className="mt-10 flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent" />
-                <span className="text-sm font-light">info@byroneast.com</span>
+                <span className="text-sm font-light">team@byroneast.com</span>
               </div>
             </motion.div>
 
@@ -147,7 +147,7 @@ const Contact = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section >
     </>
   );
 };

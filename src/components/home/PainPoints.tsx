@@ -16,7 +16,7 @@ const pains = [
   },
   {
     stat: "0",
-    text: "visibility on quality until it lands at your warehouse",
+    text: "visibility on production progress and internal quality control processes",
   },
   {
     stat: "???",

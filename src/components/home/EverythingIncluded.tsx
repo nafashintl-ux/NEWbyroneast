@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
 
 const items = [
-  { num: "01", title: "Mandarin Supplier Calls", desc: "Direct WeChat calls in Mandarin. Factories talk more openly when they're not translating." },
+  { num: "01", title: "Mandarin Supplier Calls", desc: "Communication over native Chinese platforms. Factories speak openly and directly when they're speaking their native language." },
   { num: "02", title: "Factory-Direct Sourcing", desc: "Access to Chinese-only platforms (1688.com) with factory-direct pricing." },
   { num: "03", title: "Pre-Shipment Inspection", desc: "We physically check your inventory before it leaves the factory." },
   { num: "04", title: "Price Negotiation", desc: "Ongoing price and MOQ negotiations directly with factory owners." },
   { num: "05", title: "New SKU Sourcing", desc: "We source new products factory-direct with samples in hand." },
   { num: "06", title: "Time Zone Coverage", desc: "Your China ops handled during Chinese business hours." },
   { num: "07", title: "Weekly English Reports", desc: "Clear weekly updates: what happened, what was agreed, what's next." },
-  { num: "08", title: "Canton Fair Attendance", desc: "We attend on your behalf, meet suppliers, and find opportunities." },
+  { num: "08", title: "Trade Show Attendance", desc: "We routinely attend China's largest trade shows including Canton Fair to maintain relationships and identify new opportunities." },
   { num: "09", title: "Domestic Travel in China", desc: "Need someone at a specific factory? We get on a train and go." },
   { num: "10", title: "Supplier Relationships", desc: "Long-term trust means better pricing, faster lead times, fewer problems." },
-  { num: "11", title: "Registered China Company", desc: "Byron East is a legally registered WFOE in China." },
-  { num: "12", title: "Weekend Availability", desc: "Chinese factories work weekends. So do we." },
+  { num: "11", title: "Weekend Availability", desc: "Chinese factories work weekends. So do we." },
 ];
 
 const EverythingIncluded = () => (

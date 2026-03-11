@@ -29,7 +29,7 @@ const UniqueAdvantage = () => (
         transition={{ duration: 0.6 }}
       >
         <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl">
-          Your native English, in-country ops partner.
+          Your in-country ecom ops partner.
         </h2>
         <p className="mx-auto mt-3 max-w-lg text-sm font-light text-muted-foreground">
           This combination doesn't exist anywhere else.

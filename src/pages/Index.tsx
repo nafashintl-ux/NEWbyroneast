@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import CTASection from "@/components/CTASection";
 import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
-import { Shield, Phone, FileSearch, BarChart3, ThumbsUp } from "lucide-react";
+import { Shield } from "lucide-react";
 
 import PainPoints from "@/components/home/PainPoints";
 import BeforeAfter from "@/components/home/BeforeAfter";
@@ -12,16 +12,10 @@ import StatsBar from "@/components/home/StatsBar";
 import EverythingIncluded from "@/components/home/EverythingIncluded";
 
 // import FAQ from "@/components/home/FAQ";
-import Testimonials from "@/components/home/Testimonials";
 import PriceComparison from "@/components/home/PriceComparison";
 
 
-const steps = [
-  { icon: Phone, title: "Book a Free Call", description: "15 minutes. We'll learn about your business and sourcing needs." },
-  { icon: FileSearch, title: "Share Your Current Pricing", description: "Send us your product specs and what you're currently paying." },
-  { icon: BarChart3, title: "We Source & Compare", description: "We visit factories, negotiate in person, and bring you competing quotes." },
-  { icon: ThumbsUp, title: "You Decide", description: "If we can't beat your deal, you pay nothing. No obligation, no pressure." },
-];
+
 
 const Index = () => {
   return (
@@ -42,7 +36,7 @@ const Index = () => {
               transition={{ duration: 0.5, delay: 0 }}
               className="text-xs font-medium uppercase tracking-[0.25em] text-accent sm:text-sm"
             >
-              Your native English, in-country ops partner
+              YOUR IN-COUNTRY ECOM OPS PARTNER
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
@@ -56,10 +50,18 @@ const Index = () => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+              className="mt-4 text-sm font-medium uppercase tracking-[0.15em] text-accent/70 sm:text-base"
+            >
+              Working with emerging & established ecom founders
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-6 max-w-xl text-base font-light leading-relaxed opacity-60 sm:mt-8 sm:text-lg"
             >
-              We'll beat your factory price or tell you honestly we can't. From sourcing to quality control to full supply chain management, on the ground, in Mandarin, every day.
+              Owning relationships with China's top manufacturers, fulfillment partners, and artwork design agencies to build and scale your DTC brand in under 60 days.
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}
@@ -72,8 +74,8 @@ const Index = () => {
                 size="lg"
                 className="h-12 rounded-none bg-accent px-8 text-sm font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85 sm:h-14 sm:px-10 sm:text-[12px]"
               >
-                <a href="https://cal.com/elliottjohnson01/15-min" target="_blank" rel="noopener noreferrer">
-                  Book a Free Consultation
+                <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+                  Book a Call
                 </a>
               </Button>
             </motion.div>
@@ -126,53 +128,8 @@ const Index = () => {
       {/* Stats Bar */}
       <StatsBar />
 
-      {/* How It Works */}
-      <section className="py-24 sm:py-32">
-        <div className="mx-auto max-w-6xl px-5 sm:px-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl">How it works</h2>
-            <p className="mt-3 max-w-lg text-sm font-light text-muted-foreground">
-              Four simple steps from first call to better pricing.
-            </p>
-          </motion.div>
-
-          <div className="mt-12 grid gap-8 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="relative flex flex-col"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
-                  <step.icon className="h-5 w-5 text-accent" />
-                </div>
-                <span className="mt-4 text-xs font-medium uppercase tracking-widest text-accent">
-                  Step {i + 1}
-                </span>
-                <h3 className="mt-2 font-serif text-lg sm:text-xl">{step.title}</h3>
-                <p className="mt-2 text-sm font-light leading-relaxed text-muted-foreground">
-                  {step.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Everything Included */}
       <EverythingIncluded />
-
-
-      {/* Testimonials */}
-      <Testimonials />
 
       {/* Guarantee */}
       <section className="py-24 sm:py-32">

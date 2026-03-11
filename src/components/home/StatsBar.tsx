@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { target: 5, suffix: "+", label: "Years in China" },
-  { target: 15, suffix: "%", label: "Average Price Saving" },
-  { target: 100, suffix: "+", label: "Chinese Supplier Contacts" },
+  { target: 50, suffix: "%+", label: "Cost Saving" },
+  { target: 500, suffix: "+", label: "Supplier Contacts" },
   { target: 30, suffix: "min", label: "Average Response Time" },
 ];
 

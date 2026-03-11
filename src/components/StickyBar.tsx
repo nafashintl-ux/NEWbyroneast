@@ -24,7 +24,7 @@ const StickyBar = () => {
             Your in-country ops partner. Available now.
           </span>
           <a
-            href="https://cal.com/elliottjohnson01/15-min"
+            href="https://cal.com/elliottjohnson/chinastrategycall"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border-2 border-background px-5 py-1.5 text-[11px] font-medium uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground sm:px-8 sm:py-2.5 sm:text-[12px]"

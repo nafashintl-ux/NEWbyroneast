@@ -8,7 +8,7 @@ interface CTASectionProps {
 
 const CTASection = ({
   headline = "Let's talk about your supply chain.",
-  subtext = "Book a free consultation. We'll listen first, advise second, and never push a sale.",
+  subtext = "Book a free call. We'll listen first, advise second, and never push a sale.",
 }: CTASectionProps) => (
   <section className="bg-foreground py-20 text-background sm:py-28">
     <motion.div
@@ -28,8 +28,8 @@ const CTASection = ({
           size="lg"
           className="h-12 rounded-none bg-accent px-8 text-sm font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85 sm:h-14 sm:px-10 sm:text-[12px]"
         >
-          <a href="https://cal.com/elliottjohnson01/15-min" target="_blank" rel="noopener noreferrer">
-            Book a Free Consultation
+          <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+            Book a Call
           </a>
         </Button>
       </div>
