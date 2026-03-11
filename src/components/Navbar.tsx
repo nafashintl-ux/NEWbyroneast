@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
-  const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -16,14 +14,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [location.pathname]);
-
-  const isActive = (path: string) => location.pathname === path;
-
   const handleLogoClick = () => {
-    setMobileOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -91,29 +82,30 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile toggle */}
-        <button className={cn("p-2 md:hidden", scrolled ? "text-foreground" : "text-background")} onClick={() => setMobileOpen(!mobileOpen)}>
-          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
-      </nav>
-
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="border-t border-border bg-background px-5 pb-8 pt-6 md:hidden">
-          <div className="flex flex-col gap-5">
-            {/* <Link to="/about" className="py-1 text-base font-light">About</Link>
-            <Link to="/contact" className="py-1 text-base font-light">Contact</Link> */}
-            <Button
-              asChild
-              className="mt-2 h-12 rounded-none bg-accent text-[12px] font-medium uppercase tracking-widest text-accent-foreground hover:bg-accent/85"
-            >
-              <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
-                Book a Call
-              </a>
-            </Button>
-          </div>
+        <div className="flex items-center gap-2 md:hidden">
+          <a
+            href="https://www.linkedin.com/in/elliottjohnson/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "flex items-center justify-center rounded-full p-2 transition-colors hover:bg-accent/10",
+              scrolled ? "text-foreground/80 hover:text-accent" : "text-background/80 hover:text-accent"
+            )}
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-5 w-5" />
+          </a>
+          <Button
+            asChild
+            size="sm"
+            className="rounded-none bg-accent px-4 text-[11px] font-medium uppercase tracking-[0.2em] text-accent-foreground hover:bg-accent/85"
+          >
+            <a href="https://cal.com/elliottjohnson/chinastrategycall" target="_blank" rel="noopener noreferrer">
+              Book a Call
+            </a>
+          </Button>
         </div>
-      )}
+      </nav>
     </header>
   );
 };
